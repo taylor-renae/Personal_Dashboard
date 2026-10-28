@@ -1,0 +1,10 @@
+CREATE TABLE todos (
+    id BIGINT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    todo_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    status BOOLEAN NOT NULL DEFAULT FALSE,
+    canvas_assignment_id BIGINT,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+
+);
